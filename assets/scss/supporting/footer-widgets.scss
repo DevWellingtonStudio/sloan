@@ -1,0 +1,52 @@
+/* Footer Widgets
+----------------------------------------------------------------------------- */
+.footer-widgets {
+    border-bottom: 1px solid $hr-border-color;
+    padding: $spacer*4 0;
+  	section {
+	  height: auto;
+	  min-height: auto;
+	}
+    ul, ol {
+        @include list-unstyled;
+        li {
+            margin-bottom: $spacer;
+        }
+    }
+    .widgettitle {
+        margin-bottom: $spacer*2;
+    }
+    &.text-muted {
+        .widgettitle {
+            color: #fff;
+        }
+        a {
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    &.bg-primary {
+        a {
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+  	&.bg-dark-solar {
+	  background-color: $SolarBlack;
+	  border-top: $Teal;
+	  border-top-style: solid;
+	  border-top-width: 10px;
+	  .wrap {
+		.row {
+		  .widget-area {
+			background-color: $SolarBlack;
+			section {
+			  background-color: $SolarBlack;
+			}
+		  }
+		}
+	  }
+	}
+}

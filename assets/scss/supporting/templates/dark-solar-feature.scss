@@ -1,0 +1,14 @@
+/** SCSS Dark Solar Featured
+=============================== */
+#dark-solar-featured-feed {
+  .row {
+	.col-md-4 {
+	  &:nth-child(n+4) {
+		margin-top: 1.618em;
+	  }
+	  .card {
+		border: none;
+	  }
+	}
+  }
+}

@@ -1,0 +1,19 @@
+/* Home Featured
+----------------------------------------------------------------------------- */
+.jumbotron {
+  &.post {
+	margin-top: 2.418em;
+	h1 {
+	  color: #fff;
+	}
+	p {
+	  color: #fff;
+	}
+  }
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: {
+        right: 0;
+        left: 0;
+    }
+}

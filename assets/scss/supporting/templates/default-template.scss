@@ -1,0 +1,29 @@
+/** SCSS Default Template
+========================== */
+.post-template-default {
+  .site-container {
+	.site-inner {
+	  padding-top: 0;
+	}
+  }
+  .content-sidebar-wrap {
+	&.row {
+	  margin-top: 3em;
+	}
+  }
+}
+
+.page-template-default {
+  &.content-sidebar {
+	.site-container {
+	  .site-inner {
+		padding-top: 4em;
+	  }
+	}
+  }
+  .site-container {
+	.site-inner {
+	  padding-top: 0;
+	}
+  }
+}

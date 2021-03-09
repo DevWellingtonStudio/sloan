@@ -1,0 +1,36 @@
+/** SCSS Dark Solar Grid
+============================== */
+
+#dark-solar-grid-feed {
+  .row {
+	.col-md-4 {
+	  .card {
+		border: none;
+		padding: 2em;
+	  }
+	}
+	.col-md-4:nth-child(n+4) {
+	  margin-top: 0.618em;
+	}
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  #dark-solar-grid-feed {
+	.row {
+	  .col-md-4:nth-child(n+1) {
+		margin-top: 1.618em;
+	  }
+	}
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
