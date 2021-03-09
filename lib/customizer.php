@@ -28,7 +28,7 @@ add_action( 'customize_register', function( $wp_customize ) {
 
     // Add Panel
     $wp_customize->add_panel( 'wellington', array(
-        'title' => __( 'Wellington Studio Settings', 'wellington-studio' ),
+        'title' => __( 'Sloan Settings', 'wellington-studio' ),
         'priority' => 100
     ) );
 

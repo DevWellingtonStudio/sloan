@@ -1,16 +1,16 @@
-# Wellington Studio
+# Sloan
 
 ## Introduction
 
-Wellington Studio for Genesis is a genesis child theme which integrates [Bootstrap](http://getbootstrap.com/). It uses Gulp to handle tasks, configuration and lint files.
+Sloan for Genesis is a genesis child theme which integrates [Bootstrap](http://getbootstrap.com/). It uses Gulp to handle tasks, configuration and lint files.
 
 The default branch is under development, use [v4](https://github.com/DevWellingtonStudio/wellington-studio) branch to get the last stable release.
 
 ## Installation Instructions
 
-1. Upload the Wellington Studio for Genesis theme folder via FTP to your wp-content/themes/ directory. (The Genesis parent theme needs to be in the wp-content/themes/ directory as well.)
+1. Upload Sloan for Genesis theme folder via FTP to your wp-content/themes/ directory. (The Genesis parent theme needs to be in the wp-content/themes/ directory as well.)
 2. Go to your WordPress dashboard and select Appearance.
-3. Activate the Wellington Studio for Genesis theme.
+3. Activate the Sloan for Genesis theme.
 4. Inside your WordPress dashboard, go to Genesis > Theme Settings and configure them to your liking.
 
 ## Building from Source
@@ -53,4 +53,4 @@ The default branch is under development, use [v4](https://github.com/DevWellingt
 
 ## Notes
 
-Use [SmartMenus for Bootstrap](https://github.com/webdevsuperfast/ra-smartmenus-bootstrap) for multi-level dropdown support or checkout the [v4](https://github.com/webdevsuperfast/wellington-studio/tree/v4) branch.
+Use [SmartMenus for Bootstrap](https://github.com/webdevsuperfast/ra-smartmenus-bootstrap).
