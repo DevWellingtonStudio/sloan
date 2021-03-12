@@ -51,4 +51,4 @@
 		  <textarea style="width: 100%;" rows="4" name="dark-solar-textarea" id="dark-solar-textarea"><?php if ( isset ( $dark_solar_grid_temp_stored_meta['dark-solar-textarea'] ) ) echo $dark_solar_grid_temp_stored_meta['dark-solar-textarea'][0]; ?></textarea>
 		</p>
 
-<?php } ?>
+<?php }
