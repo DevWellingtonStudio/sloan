@@ -1,5 +1,10 @@
 /* Site Header
 ----------------------------------------------------------------------------- */
+.navbar-brand {
+  img {
+	max-width: 150px;
+  }
+}
 .site-header {
     // padding: $spacer 0;
     .site-title {

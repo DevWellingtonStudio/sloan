@@ -8,9 +8,17 @@
 	.site-inner {
 	  .wrap {
 		.row {
-		  .content .block-area>.alignfull, .content .entry-content>.alignfull, .full-width-content .block-area>.alignfull, .full-width-content .entry-content>.alignfull {
-			margin-top: 0 !important;
-		  }
+		 #genesis-content {
+		   .page {
+			 .entry-content {
+			   .wp-block-genesis-blocks-gb-container {
+				 &.alignfull {
+				 margin-top: 0;
+			   }
+			   }
+			 }
+		   }
+		 }
 		}
 	  }
 	}
