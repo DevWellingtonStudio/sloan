@@ -1,5 +1,19 @@
 /** Blocks SCSS
 ================ */
 .page-template-blocks {
+  .site-container {
+	.no-hero-margin {
+	  margin: 0;
+	}
+	.site-inner {
+	  .wrap {
+		.row {
+		  .content .block-area>.alignfull, .content .entry-content>.alignfull, .full-width-content .block-area>.alignfull, .full-width-content .entry-content>.alignfull {
+			margin-top: 0 !important;
+		  }
+		}
+	  }
+	}
+  }
 
 }
