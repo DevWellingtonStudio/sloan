@@ -17,11 +17,11 @@
 		}
 
 		$port_slider1           = get_theme_mod('port_slider1', $default);
-		$slider1_bg					    = get_theme_mod('slider1_bg');
-		$slider1_title_color		= get_theme_mod('slider1_title_color');
-		$slider1_text_color			= get_theme_mod('slider1_text_color');
+		$slider1_bg				= get_theme_mod('slider1_bg');
+		$slider1_title_color	= get_theme_mod('slider1_title_color');
+		$slider1_text_color		= get_theme_mod('slider1_text_color');
 		$slider1_btn_text_color	= get_theme_mod('slider1_btn_text_color');
-		$slider1_btn_color			= get_theme_mod('slider1_btn_color');
+		$slider1_btn_color		= get_theme_mod('slider1_btn_color');
 
 		if($port_slider1 !== $default) {
 			$css_1 .= '
