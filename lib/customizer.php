@@ -57,6 +57,7 @@
 				'roboto-condensed-font'     => __('Roboto/Cabin', 'wellington-studio'),
 				'mark-poppins'              => __('Mark Script/Poppins', 'wellington-studio'),
 				'blackstone-lato-crimson'   => __('Blackstone/Lato/Crimson', 'wellington-studio'),
+				'anisha-poppins'            => __('Anisha/Poppins', 'wellington-studio')
 			)
 		) );
 

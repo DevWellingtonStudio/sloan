@@ -112,6 +112,7 @@
 		$roboto_condensed           = get_theme_mod('fontSelector') == 'roboto-condensed-font';
 		$mark_poppins               = get_theme_mod('fontSelector') == 'mark-poppins';
 		$blackstone_lato_crimson    = get_theme_mod('fontSelector') == 'blackstone-lato-crimson';
+		$anisha_poppins             = get_theme_mod('fontSelector') == 'anisha-poppins';
 
 		if($default_font) {
 			$css_1 .='
@@ -184,7 +185,21 @@
 			body, body p, p {
 			 font-family: "Crimson Text", serif;
 			}
-
+			';
+		}
+		if($anisha_poppins) {
+			$css_1 .='
+			h1,h2,h3 {
+			 font-family: "anisha", cursive;
+			}
+			h4,h5,h6 {
+			 font-family: "Poppins", sans-serif;
+			 font-weight: 700;
+			}
+			body, body p, p {
+			 font-family: "Poppins", sans-serif;
+			 font-weight: 300;
+			}
 			';
 		}
 		return $css_1;
@@ -208,6 +223,9 @@
 
 		wp_register_style('lato-crimson', 'https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lato:wght@700&display=swap', [], null );
 
+		wp_register_style('anisha-poppins', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap', [], null );
+
+		wp_register_style('anisha', get_stylesheet_directory_uri() . '/assets/fonts/anisha.css', array(), '', all );
 
 		$default_font               = get_theme_mod('fontSelector') == 'default-font';
 		$roboto_raleway             = get_theme_mod('fontSelector') == 'roboto-raleway-font';
@@ -216,7 +234,7 @@
 		$roboto_condensed           = get_theme_mod('fontSelector') == 'roboto-condensed-font';
 		$mark_poppins               = get_theme_mod('fontSelector') == 'mark-poppins';
 		$blackstone_lato_crimson    = get_theme_mod('fontSelector') == 'blackstone-lato-crimson';
-
+		$anisha_poppins             = get_theme_mod('fontSelector') == 'anisha-poppins';
 
 		if($default_font) {
 			wp_enqueue_style('default-font');
@@ -240,5 +258,8 @@
 			wp_enqueue_style('blackstone');
 			wp_enqueue_style('lato-crimson');
 		}
-
+		if($anisha_poppins) {
+			wp_enqueue_style('anisha-poppins');
+			wp_enqueue_style('anisha');
+		}
 	}
