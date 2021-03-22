@@ -1,0 +1,7 @@
+/** Blackstone Font **/
+@font-face {
+	font-family: 'blackstone';
+	src:  url('Blackstone.woff') format('woff'),
+	url('Blackstone.ttf') format('truetype'),
+	url('Blackstone.otf') format('opentype')
+}
