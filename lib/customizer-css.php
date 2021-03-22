@@ -44,11 +44,11 @@
 		}
 
 		$port_slider2           = get_theme_mod('port_slider2', $default);
-		$slider2_bg					    = get_theme_mod('slider2_bg', $default);
-		$slider2_title_color		= get_theme_mod('slider2_title_color', $default);
-		$slider2_text_color			= get_theme_mod('slider2_text_color', $default);
+		$slider2_bg			    = get_theme_mod('slider2_bg', $default);
+		$slider2_title_color	= get_theme_mod('slider2_title_color', $default);
+		$slider2_text_color		= get_theme_mod('slider2_text_color', $default);
 		$slider2_btn_text_color	= get_theme_mod('slider2_btn_text_color', $default);
-		$slider2_btn_color			= get_theme_mod('slider2_btn_color', $default);
+		$slider2_btn_color		= get_theme_mod('slider2_btn_color', $default);
 
 		if($port_slider2 !== $default) {
 			$css_1 .= '
