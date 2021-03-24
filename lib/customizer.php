@@ -2,11 +2,11 @@
 	/**
 	 * Customizer
 	 *
-	 * @package      Bootstrap for Genesis
+	 * @package      Bootstrap for Sloan
 	 * @since        1.0
-	 * @link         http://webdevsuperfast.github.io
-	 * @author       Rotsen Mark Acob <webdevsuperfast.github.io>
-	 * @copyright    Copyright (c) 2017, Rotsen Mark Acob
+	 * @link         https://github.com/DevWellingtonStudio/sloan
+	 * @author       Wellington Studio & ParsonsHosting
+	 * @copyright    Copyright (c) 2021, Wellington Studdio
 	 * @license      http://opensource.org/licenses/gpl-2.0.php GNU Public License
 	 *
 	 */
@@ -150,7 +150,32 @@
 				)
 			)
 		);
-
+		// Navigation Font Color
+		$wp_customize->add_setting('navfont-color', array(
+			'default' => ''
+		));
+		// Navigation Font Color Control
+		$wp_customize->add_control( new WP_Customize_Color_Control(
+				$wp_customize, 'navfont-color', array(
+					'label' => 'Navigation Font Color',
+					'section' => 'navigation',
+					'settings' => 'navfont-color'
+				)
+			)
+		);
+		// Navigation Font Color
+		$wp_customize->add_setting('navfont-active-color', array(
+			'default' => ''
+		));
+		// Navigation Font Color Control
+		$wp_customize->add_control( new WP_Customize_Color_Control(
+				$wp_customize, 'navfont-active-color', array(
+					'label' => 'Navigation Active Color',
+					'section' => 'navigation',
+					'settings' => 'navfont-active-color'
+				)
+			)
+		);
 		// Navigation Extras
 		$wp_customize->add_setting( 'navextra', array(
 			'default' => 'search'

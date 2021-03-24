@@ -27,9 +27,9 @@ add_filter( 'wp_nav_menu_args', function( $args ) {
     $navextra = get_theme_mod( 'navextra', false );
 
     if ( $navextra !== '' ) {
-        $menu_classes[] = 'mr-auto';
+        $menu_classes[] = 'mlr-auto mlr-over-ride';
     } else {
-        $menu_classes[] = 'ml-auto';
+        $menu_classes[] = 'ml-auto ml-over-ride';
     }
 
     if ( 'primary' === $args['theme_location'] ) {

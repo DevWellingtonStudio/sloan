@@ -8,11 +8,30 @@
 		$default = '';
 
 		$navcolor_picker = get_theme_mod('navcolor-picker');
-		if(navcolor_picker !== $default) {
+		if($navcolor_picker !== $default) {
 			$css_1 .= '
 			.nav-primary {
 			background-color: '. $navcolor_picker .' !important;
 			}
+			';
+		}
+		$navfont_color = get_theme_mod('navfont-color');
+		if($navfont_color !== $default) {
+			$css_1 .= '
+			.navbar-brand, .navbar-text,
+			#menu-primary-navigation-menu.navbar-nav .nav-link {
+			 color:'. $navfont_color .' !important;
+			 }
+			';
+		}
+		$navfont_active_color = get_theme_mod('navfont-active-color');
+		if($navfont_active_color !== $default) {
+			$css_1 .= '
+			#menu-primary-navigation-menu.navbar-nav .nav-link:hover,
+			#menu-primary-navigation-menu.navbar-nav .nav-link:active,
+			#menu-primary-navigation-menu.navbar-nav .active .nav-link {
+			 color:'. $navfont_active_color .' !important;
+			 }
 			';
 		}
 

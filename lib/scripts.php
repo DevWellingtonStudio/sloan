@@ -2,11 +2,11 @@
 /**
  * Scripts
  *
- * @package      Bootstrap for Genesis
+ * @package      Bootstrap for Sloan
  * @since        1.0
- * @link         http://webdevsuperfast.github.io
- * @author       Rotsen Mark Acob <webdevsuperfast.github.io>
- * @copyright    Copyright (c) 2015, Rotsen Mark Acob
+ * @link         https://github.com/DevWellingtonStudio/sloan
+ * @author       Wellington Studio & ParsonsHosting
+ * @copyright    Copyright (c) 2021, Wellington Studdio
  * @license      http://opensource.org/licenses/gpl-2.0.php GNU Public License
  *
 */
@@ -23,17 +23,17 @@ function bfg_theme_scripts() {
 			wp_add_inline_style('custom-css', load_customizer_css());
 		}
 
-
 		// Disable the superfish script
 		wp_deregister_script( 'superfish' );
 		wp_deregister_script( 'superfish-args' );
 
 		// Deregister jQuery and use Bootstrap supplied version
-		if(!is_customize_preview()) {
+		/*if(!is_customize_preview()) {
 			wp_deregister_script( 'jquery' );
-		}
-		wp_register_script( 'jquery', BFG_THEME_JS . 'jquery.slim.min.js', array(), $version, true );
-		wp_enqueue_script( 'jquery' );
+		}*/
+		wp_register_script( 'bootstrap-jquery', BFG_THEME_JS . 'jquery.slim.min.js', array(), $version, true );
+		wp_add_inline_script( 'bootstrap-jquery', 'var jQuery_slim_js = $.noConflict(true);' );
+		wp_enqueue_script( 'bootstrap-jquery' );
 
 		// Register Popper JS and enqueue it
 		wp_register_script( 'app-popper-js', BFG_THEME_JS . 'popper.min.js', array( 'jquery' ), $version, true );
@@ -46,6 +46,9 @@ function bfg_theme_scripts() {
 		// Register theme JS and enqueue it
 		wp_register_script( 'app-js', BFG_THEME_JS . 'app.min.js', array( 'jquery' ), $version, true );
 		wp_enqueue_script( 'app-js' );
+
+		wp_register_script('font-awesome', 'https://kit.fontawesome.com/76342ff491.js', array(), '5.15.3', true );
+		wp_enqueue_script('font-awesome');
 	}
 }
 
