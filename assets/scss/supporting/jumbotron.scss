@@ -1,8 +1,14 @@
 /* Home Featured
 ----------------------------------------------------------------------------- */
 .jumbotron {
+  position: relative;
+  z-index: 1;
   &.post {
 	margin-top: 2.418em;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 400px;
 	h1 {
 	  color: #fff;
 	}
@@ -16,4 +22,17 @@
         right: 0;
         left: 0;
     }
+  .container {
+	position: relative;
+	z-index: 5;
+  }
+}
+.jumbotron:before {
+  content: '';
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 0;
 }
