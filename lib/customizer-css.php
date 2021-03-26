@@ -19,7 +19,7 @@
 		if($navfont_color !== $default) {
 			$css_1 .= '
 			.navbar-brand, .navbar-text,
-			#menu-primary-navigation-menu.navbar-nav .nav-link {
+			.navbar-nav .nav-link {
 			 color:'. $navfont_color .' !important;
 			 }
 			';
@@ -27,10 +27,18 @@
 		$navfont_active_color = get_theme_mod('navfont-active-color');
 		if($navfont_active_color !== $default) {
 			$css_1 .= '
-			#menu-primary-navigation-menu.navbar-nav .nav-link:hover,
-			#menu-primary-navigation-menu.navbar-nav .nav-link:active,
-			#menu-primary-navigation-menu.navbar-nav .active .nav-link {
+			.navbar-nav .nav-link:hover,
+			.navbar-nav .nav-link:active,
+			.navbar-nav .active .nav-link {
 			 color:'. $navfont_active_color .' !important;
+			 }
+			';
+		}
+		$navfont_size = get_theme_mod('navfont-size');
+		if($navfont_size !== $default) {
+			$css_1 .='
+			#nav-primary ul li {
+			 font-size: '. $navfont_size .'rem;
 			 }
 			';
 		}

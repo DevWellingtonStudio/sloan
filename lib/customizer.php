@@ -170,9 +170,26 @@
 		// Navigation Font Color Control
 		$wp_customize->add_control( new WP_Customize_Color_Control(
 				$wp_customize, 'navfont-active-color', array(
-					'label' => 'Navigation Active Color',
+					'label' => __('Navigation Active Color', 'wellington-studio'),
 					'section' => 'navigation',
 					'settings' => 'navfont-active-color'
+				)
+			)
+		);
+		// Nav Font Size
+		$wp_customize->add_setting('navfont-size', array(
+			'default' => ''
+		));
+		// Nav Font Size
+		$wp_customize -> add_control (
+			new WP_Customize_Control (
+				$wp_customize,
+				'navfont-size', array (
+					'label'			=> __( 'Top Nav Font Size', 'wellington-studio' ),
+					'description'   => __('Font size is in "rem" value. Do not add px, em, rem after the number. Only enter a number from 1 to any number. Generally, numbers greater than 1 will be too large. try .9 or less.  ', 'wellington-studio'),
+					'section'		=> 'navigation',
+					'settings'	=> 'navfont-size',
+					'type'			=> 'text'
 				)
 			)
 		);

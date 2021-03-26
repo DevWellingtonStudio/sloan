@@ -1,6 +1,5 @@
 /* Navbar
 ----------------------------------------------------------------------------- */
-
 .no-js .menu-item-has-children:hover .dropdown-menu,
 .no-js .menu-item-has-children:focus .dropdown-menu {
     display: block;
@@ -33,4 +32,11 @@
 
 .bg-darksolar {
   background-color: $DarkAqua;
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav {
+	flex-direction: row;
+	flex-wrap: wrap;
+  }
 }
