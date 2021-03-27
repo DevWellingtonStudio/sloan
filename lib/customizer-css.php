@@ -246,13 +246,13 @@
 
 		wp_register_style('mark-poppins', 'https://fonts.googleapis.com/css2?family=Marck+Script&family=Poppins&display=swap', [], null );
 
-		wp_register_style('blackstone', get_stylesheet_directory_uri() . '/assets/fonts/blackstone.css', array(), '', all );
+		wp_register_style('blackstone', get_stylesheet_directory_uri() . '/assets/fonts/blackstone.css', array(), '' );
 
 		wp_register_style('lato-crimson', 'https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lato:wght@700&display=swap', [], null );
 
 		wp_register_style('anisha-poppins', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap', [], null );
 
-		wp_register_style('anisha', get_stylesheet_directory_uri() . '/assets/fonts/anisha.css', array(), '', all );
+		wp_register_style('anisha', get_stylesheet_directory_uri() . '/assets/fonts/anisha.css', array(), '' );
 
 		$default_font               = get_theme_mod('fontSelector') == 'default-font';
 		$roboto_raleway             = get_theme_mod('fontSelector') == 'roboto-raleway-font';
