@@ -275,4 +275,59 @@
 				'dark-solar' => __('Dark Solar', 'wellington-studio' )
 			)
 		) );
+
+		// Footer Color Picker
+		$wp_customize->add_setting('footer-picker', array(
+			'default' => '',
+		));
+		// Footer Background Color Picker
+		$wp_customize->add_control( new WP_Customize_Color_Control(
+				$wp_customize, 'footer-picker', array(
+					'label' => 'Footer Background Color',
+					'section' => 'footer',
+					'settings' => 'footer-picker'
+				)
+			)
+		);
+		// Footer Widget Title Picker
+		$wp_customize->add_setting('footer-title-picker', array(
+			'default' => '',
+		));
+		// Footer Widget Title Picker
+		$wp_customize->add_control( new WP_Customize_Color_Control(
+				$wp_customize, 'footer-title-picker', array(
+					'label' => 'Footer Title Color',
+					'section' => 'footer',
+					'settings' => 'footer-title-picker'
+				)
+			)
+		);
+		// Footer Widget Text Color Picker
+		$wp_customize->add_setting('footer-text-picker', array(
+			'default' => '',
+		));
+		// Footer Widget Text Color Picker
+		$wp_customize->add_control( new WP_Customize_Color_Control(
+				$wp_customize, 'footer-text-picker', array(
+					'label' => 'Footer Text Color',
+					'section' => 'footer',
+					'settings' => 'footer-text-picker'
+				)
+			)
+		);
+		// Footer Widget Link Color Picker
+		$wp_customize->add_setting('footer-link-picker', array(
+			'default' => '',
+		));
+		// Footer Widget Link Color Picker
+		$wp_customize->add_control( new WP_Customize_Color_Control(
+				$wp_customize, 'footer-link-picker', array(
+					'label' => 'Footer Link Color',
+					'section' => 'footer',
+					'settings' => 'footer-link-picker'
+				)
+			)
+		);
 	} );
+
+

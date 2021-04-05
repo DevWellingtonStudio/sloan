@@ -108,26 +108,27 @@ function bfg_merge_genesis_attr_classes() {
     $navcontainer = get_theme_mod( 'navcontainer', 'lg' );
     $navclasses[] = 'navbar-expand-' . $navcontainer;
 
-    $navcolor = get_theme_mod( 'navcolor', 'dark' );
+	    $navcolor = get_theme_mod( 'navcolor', 'dark' );
 
-    switch( $navcolor ) {
-        case 'light':
-            $navclasses[] = 'navbar-light';
-            $navclasses[] = 'bg-light';
-            break;
-        case 'dark':
-        default:
-            $navclasses[] = 'navbar-dark';
-            $navclasses[] = 'bg-dark';
-            break;
-        case 'primary':
-            $navclasses[] = 'navbar-dark';
-            $navclasses[] = 'bg-primary';
-            break;
-	    case 'dark-solar':
-	    	$navclasses[] = 'navbar-dark-solar';
-	    	$navclasses[] = 'bg-darksolar';
-    }
+	    switch ( $navcolor ) {
+		    case 'light':
+			    $navclasses[] = 'navbar-light';
+			    $navclasses[] = 'bg-light';
+			    break;
+		    case 'dark':
+		    default:
+			    $navclasses[] = 'navbar-dark';
+			    $navclasses[] = 'bg-dark';
+			    break;
+		    case 'primary':
+			    $navclasses[] = 'navbar-dark';
+			    $navclasses[] = 'bg-primary';
+			    break;
+		    case 'dark-solar':
+			    $navclasses[] = 'navbar-dark-solar';
+			    $navclasses[] = 'bg-darksolar';
+	    }
+
 
     $classes['nav-primary'] = esc_attr( implode( ' ', $navclasses ) );
 

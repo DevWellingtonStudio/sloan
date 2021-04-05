@@ -15,6 +15,38 @@
 			}
 			';
 		}
+		$footer_picker = get_theme_mod('footer-picker');
+		if($footer_picker !== $default) {
+			$css_1 .='
+			#genesis-footer-widgets {
+			background-color:'. $footer_picker .' !important;
+			}
+			';
+		}
+		$footer_text_picker = get_theme_mod('footer-text-picker');
+		if($footer_text_picker !== $default) {
+			$css_1 .='
+			#genesis-footer-widgets .widget-wrap {
+			color:'. $footer_text_picker .' !important;
+			}
+			';
+		}
+		$footer_link_picker = get_theme_mod('footer-link-picker');
+		if($footer_link_picker !== $default) {
+			$css_1 .='
+			#genesis-footer-widgets a {
+			color:'. $footer_link_picker .' !important;
+			}
+			';
+		}
+		$footer_title_picker = get_theme_mod('footer-title-picker');
+		if($footer_title_picker !== $default) {
+			$css_1 .='
+			#genesis-footer-widgets .widgettitle {
+			color:'. $footer_title_picker .' !important;
+			}
+			';
+		}
 		$navfont_color = get_theme_mod('navfont-color');
 		if($navfont_color !== $default) {
 			$css_1 .= '
