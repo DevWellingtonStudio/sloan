@@ -71,14 +71,14 @@ section .overlay {
   }
 }
 
-@media (pointer: coarse) and (hover: none) {
+/*@media (pointer: coarse) and (hover: none) {
   section {
 	background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
   }
   section video {
 	display: none;
   }
-}
+}*/
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {}

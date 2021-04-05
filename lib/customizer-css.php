@@ -135,6 +135,7 @@
 		$default_font               = get_theme_mod('fontSelector') == 'default-font';
 		$roboto_raleway             = get_theme_mod('fontSelector') == 'roboto-raleway-font';
 		$montserrat_oswald          = get_theme_mod('fontSelector') == 'montserrat-oswald-font';
+		$montserrat_garamond        = get_theme_mod('fontSelector') == 'montserrat-garamond';
 		$anton_barlow               = get_theme_mod('fontSelector') == 'anton-barlow-font';
 		$roboto_condensed           = get_theme_mod('fontSelector') == 'roboto-condensed-font';
 		$mark_poppins               = get_theme_mod('fontSelector') == 'mark-poppins';
@@ -165,6 +166,16 @@
 			$css_1 .='
 			h1,h2,h3,h4,h5 {
 			 font-family: "Oswald", sans-serif;
+			}
+			body, body p, p {
+			 font-family: "Montserrat", sans-serif;
+			}
+			';
+		}
+		if($montserrat_garamond) {
+			$css_1 .='
+			h1,h2,h3,h4,h5 {
+			 font-family: "Cormorant Garamond", serif;
 			}
 			body, body p, p {
 			 font-family: "Montserrat", sans-serif;
@@ -240,6 +251,8 @@
 
 		wp_register_style( 'montserrat-oswald', 'https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap', [], null );
 
+		wp_register_style( 'garamond-montserrat', 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Montserrat&display=swap', [], null );
+
 		wp_register_style( 'barlow-anton', 'https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed&display=swap', [], null );
 
 		wp_register_style( 'roboto-cabin', 'https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@700&display=swap', [], null );
@@ -257,6 +270,7 @@
 		$default_font               = get_theme_mod('fontSelector') == 'default-font';
 		$roboto_raleway             = get_theme_mod('fontSelector') == 'roboto-raleway-font';
 		$montserrat_oswald          = get_theme_mod('fontSelector') == 'montserrat-oswald-font';
+		$montserrat_garamond        = get_theme_mod('fontSelector') == 'montserrat-garamond';
 		$anton_barlow               = get_theme_mod('fontSelector') == 'anton-barlow-font';
 		$roboto_condensed           = get_theme_mod('fontSelector') == 'roboto-condensed-font';
 		$mark_poppins               = get_theme_mod('fontSelector') == 'mark-poppins';
@@ -271,6 +285,9 @@
 		}
 		if($montserrat_oswald) {
 			wp_enqueue_style('montserrat-oswald-font');
+		}
+		if($montserrat_garamond) {
+			wp_enqueue_style('garamond-montserrat');
 		}
 		if($anton_barlow) {
 			wp_enqueue_style('barlow-anton');
