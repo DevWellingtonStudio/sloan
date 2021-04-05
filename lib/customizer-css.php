@@ -141,7 +141,18 @@
 		$mark_poppins               = get_theme_mod('fontSelector') == 'mark-poppins';
 		$blackstone_lato_crimson    = get_theme_mod('fontSelector') == 'blackstone-lato-crimson';
 		$anisha_poppins             = get_theme_mod('fontSelector') == 'anisha-poppins';
+		$new_wellington             = get_theme_mod('fontSelector') == 'new-wellington';
 
+		if($new_wellington) {
+			$css_1 .='
+			h1,h2,h3,h4 {
+			font-family:"Cormorant Garamnond", serif;
+			}
+			body, body p, p, h5, h6 {
+			font-family:"Montserrat", sans-serif;
+			}
+			';
+		}
 		if($default_font) {
 			$css_1 .='
 			h1,h2,h3,h4,h5 {
@@ -267,6 +278,8 @@
 
 		wp_register_style('anisha', get_stylesheet_directory_uri() . '/assets/fonts/anisha.css', array(), '' );
 
+		wp_register_style( 'new-wellington', 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:ital,wght@0,200;0,400;1,400&display=swap', [], null );
+
 		$default_font               = get_theme_mod('fontSelector') == 'default-font';
 		$roboto_raleway             = get_theme_mod('fontSelector') == 'roboto-raleway-font';
 		$montserrat_oswald          = get_theme_mod('fontSelector') == 'montserrat-oswald-font';
@@ -276,7 +289,11 @@
 		$mark_poppins               = get_theme_mod('fontSelector') == 'mark-poppins';
 		$blackstone_lato_crimson    = get_theme_mod('fontSelector') == 'blackstone-lato-crimson';
 		$anisha_poppins             = get_theme_mod('fontSelector') == 'anisha-poppins';
+		$new_wellington             = get_theme_mod('fontSelector') == 'new-wellington';
 
+		if($new_wellington) {
+			wp_enqueue_style('new-wellington');
+		}
 		if($default_font) {
 			wp_enqueue_style('default-font');
 		}
