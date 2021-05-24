@@ -59,7 +59,8 @@
 				'mark-poppins'              => __('Mark Script/Poppins', 'wellington-studio'),
 				'blackstone-lato-crimson'   => __('Blackstone/Lato/Crimson', 'wellington-studio'),
 				'anisha-poppins'            => __('Anisha/Poppins', 'wellington-studio'),
-				'new-wellington'            => __('New Wellington', 'wellington-studio')
+				'new-wellington'            => __('New Wellington', 'wellington-studio'),
+				'poppins-playfair'          => __('Poppins/Playfair', 'wellington-studio')
 			)
 		) );
 
