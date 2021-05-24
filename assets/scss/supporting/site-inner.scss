@@ -1,6 +1,7 @@
 /* Site Inner
 ----------------------------------------------------------------------------- */
 .site-inner {
+  overflow: hidden;
     padding: $spacer*4 0;
     .content {
         margin-bottom: $spacer;
@@ -17,6 +18,7 @@
 	}
 	.site-inner {
 	  padding-top: 0;
+	  overflow: hidden;
 	}
   }
 }
