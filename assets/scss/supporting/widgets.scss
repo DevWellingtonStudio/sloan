@@ -1,6 +1,10 @@
 /* Widget Styling
 ------------------------------------------------------------ */
 
+.textwidget {
+  overflow-wrap: break-word;
+}
+
 // default widget styles
 .widget {
     table {
