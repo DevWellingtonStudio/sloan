@@ -1,6 +1,5 @@
 /** SCSS Helpers
 ====================== */
-
 .nmt-1 {
   top: -1.7em !important;
 }
@@ -8,4 +7,16 @@
 .mlr-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width:576px) {
+  .display-none-on-desktop {
+	display: none !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .display-none-on-mobile {
+	display: none !important;
+  }
 }

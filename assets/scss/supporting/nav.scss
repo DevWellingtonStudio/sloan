@@ -1,5 +1,17 @@
 /* Navbar
 ----------------------------------------------------------------------------- */
+.navbar-toggler-icon:focus-visible,
+.navbar-toggler-icon:focus,
+.navbar-toggler-icon:hover,
+.navbar-toggler-icon:visited,
+.navbar-toggler-icon:focus-visible,
+.navbar-toggler:focus-visible {
+  outline: none !important;
+}
+.navbar-toggler-icon,
+.navbar-toggler {
+  outline: none !important;
+}
 .no-js .menu-item-has-children:hover .dropdown-menu,
 .no-js .menu-item-has-children:focus .dropdown-menu {
     display: block;
