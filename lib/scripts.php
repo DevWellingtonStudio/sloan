@@ -18,20 +18,37 @@ function bfg_theme_scripts() {
 	if ( !is_admin() ) {
 		wp_enqueue_style( 'custom-css', get_stylesheet_directory_uri() . '/assets/css/custom.css', array(), '1.0', 'all' );
 
+		wp_register_style('animate-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css', array(), '', 'all');
+		wp_enqueue_style('animate-css');
+
 
 		if(function_exists('load_customizer_css')) {
 			wp_add_inline_style('custom-css', load_customizer_css());
 		}
 
 		// Disable the superfish script
-		wp_deregister_script( 'superfish' );
-		wp_deregister_script( 'superfish-args' );
+		//wp_deregister_script( 'superfish' );
+		//wp_deregister_script( 'superfish-args' );
 
 		// Deregister jQuery and use Bootstrap supplied version
-		/*if(!is_customize_preview()) {
-			wp_deregister_script( 'jquery' );
-		}*/
-		wp_register_script( 'bootstrap-jquery', BFG_THEME_JS . 'jquery.slim.min.js', array(), $version, true );
+		//if(!is_customize_preview()) {
+			//wp_deregister_script( 'jquery' );
+		//}
+
+
+		/** Remove jQuery and jQuery-ui scripts loading from header */
+
+		wp_deregister_script( 'jquery' );
+		wp_deregister_script( 'jquery-ui' );
+
+		wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false, null, 'true');
+		//wp_add_inline_script( 'jquery', 'var jQuery3_5_1 = $.noConflict(true);' );
+		wp_enqueue_script( 'jquery');
+
+		wp_register_script( 'jquery-ui', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', false, null, 'true');
+		wp_enqueue_script( 'jquery-ui');
+
+		wp_register_script( 'bootstrap-jquery', BFG_THEME_JS . 'jquery.slim.min.js', array('jquery'), $version, 'false' );
 		wp_add_inline_script( 'bootstrap-jquery', 'var jQuery_slim_js = $.noConflict(true);' );
 		wp_enqueue_script( 'bootstrap-jquery' );
 
