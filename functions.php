@@ -11,6 +11,8 @@
  *
 */
 
+//remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );
+
 add_action( 'genesis_setup', 'bfg_childtheme_setup', 15 );
 
 function bfg_childtheme_setup() {
