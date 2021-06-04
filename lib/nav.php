@@ -64,7 +64,7 @@ function bfg_nav_menu_markup_filter( $html, $args ) {
         $output .= apply_filters( 'bfg_navbar_brand', bfg_navbar_brand_markup() );
     }
 
-    $output .= '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#'.$data_target.'" aria-controls="'.$data_target.'" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>';
+    $output .= '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#'.$data_target.'" aria-controls="'.$data_target.'" aria-expanded="false" aria-label="Toggle navigation"><!--<span class="navbar-toggler-icon">--><i class="fas fa-bars"></i><!--</span>--></button>';
     $output .= $html;
 
     $navextra = get_theme_mod( 'navextra', false );
