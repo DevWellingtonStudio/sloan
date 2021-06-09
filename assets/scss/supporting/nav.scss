@@ -1,5 +1,11 @@
 /* Navbar
 ----------------------------------------------------------------------------- */
+nav {
+  &.navbar {
+	height: auto !important;
+	padding-top: 0 !important;
+  }
+}
 .navbar-toggler-icon:focus-visible,
 .navbar-toggler-icon:focus,
 .navbar-toggler-icon:hover,

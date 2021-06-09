@@ -51,11 +51,5 @@
 			<textarea style="width: 100%;" rows="4" name="posts-jumbotron-text" id="posts-jumbotron-text"><?php if ( isset ( $posts_stored_meta['posts-jumbotron-text'] ) ) echo $posts_stored_meta['posts-jumbotron-text'][0]; ?></textarea>
 		</p>
 
-
-
-
-
-
-
 <?php
 }
