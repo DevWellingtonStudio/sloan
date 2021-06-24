@@ -38,15 +38,15 @@ function bfg_theme_scripts() {
 
 		/** Remove jQuery and jQuery-ui scripts loading from header */
 
-		wp_deregister_script( 'jquery' );
-		wp_deregister_script( 'jquery-ui' );
+		//wp_deregister_script( 'jquery' );
+		//wp_deregister_script( 'jquery-ui' );
 
-		wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false, null, 'true');
+		/*wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false, null, 'true');
 		//wp_add_inline_script( 'jquery', 'var jQuery3_5_1 = $.noConflict(true);' );
 		wp_enqueue_script( 'jquery');
 
 		wp_register_script( 'jquery-ui', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', false, null, 'true');
-		wp_enqueue_script( 'jquery-ui');
+		wp_enqueue_script( 'jquery-ui'); */
 
 		wp_register_script( 'bootstrap-jquery', BFG_THEME_JS . 'jquery.slim.min.js', array('jquery'), $version, 'false' );
 		wp_add_inline_script( 'bootstrap-jquery', 'var jQuery_slim_js = $.noConflict(true);' );
