@@ -60,7 +60,8 @@
 				'blackstone-lato-crimson'   => __('Blackstone/Lato/Crimson', 'wellington-studio'),
 				'anisha-poppins'            => __('Anisha/Poppins', 'wellington-studio'),
 				'new-wellington'            => __('New Wellington', 'wellington-studio'),
-				'poppins-playfair'          => __('Poppins/Playfair', 'wellington-studio')
+				'poppins-playfair'          => __('Poppins/Playfair', 'wellington-studio'),
+				'oswald-roboto'             => __('Oswald/Roboto', 'wellington-studio')
 			)
 		) );
 

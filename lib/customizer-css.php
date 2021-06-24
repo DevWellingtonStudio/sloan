@@ -175,6 +175,7 @@
 		$anisha_poppins             = get_theme_mod('fontSelector') == 'anisha-poppins';
 		$new_wellington             = get_theme_mod('fontSelector') == 'new-wellington';
 		$poppins_playfair           = get_theme_mod('fontSelector') == 'poppins-playfair';
+		$oswald_roboto              = get_theme_mod('fontSelector') == 'oswald-roboto';
 
 		if($new_wellington) {
 			$css_1 .='
@@ -297,6 +298,19 @@
 			}
 			';
 		}
+		if($oswald_roboto) {
+			$css_1 .='
+			h1,h2,h3,h4,h5 {
+			 font-family: "Oswald", sans-serif;
+			}
+			body. body p, p {
+			 font-family: "Roboto", sans-serif;
+			}
+			#menu-primary-navigation-menu li.menu-item {
+			 font-family: "Roboto", sans-serif;
+			}
+			';
+		}
 		return $css_1;
 	}
 
@@ -328,6 +342,8 @@
 
 		wp_register_style('poppins-playfair', 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@200&display=swap', [], null);
 
+		wp_register_style( 'oswald-roboto', 'https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap', [], null );
+
 		$default_font               = get_theme_mod('fontSelector') == 'default-font';
 		$roboto_raleway             = get_theme_mod('fontSelector') == 'roboto-raleway-font';
 		$montserrat_oswald          = get_theme_mod('fontSelector') == 'montserrat-oswald-font';
@@ -339,6 +355,7 @@
 		$anisha_poppins             = get_theme_mod('fontSelector') == 'anisha-poppins';
 		$new_wellington             = get_theme_mod('fontSelector') == 'new-wellington';
 		$poppins_playfair           = get_theme_mod('fontSelector') == 'poppins-playfair';
+		$oswald_roboto              = get_theme_mod('fontSelector') == 'oswald-roboto';
 
 		if($new_wellington) {
 			wp_enqueue_style('new-wellington');
@@ -374,5 +391,8 @@
 		}
 		if($poppins_playfair) {
 			wp_enqueue_style('poppins-playfair');
+		}
+		if($oswald_roboto) {
+			wp_enqueue_style('oswald-roboto');
 		}
 	}
