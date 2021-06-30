@@ -176,6 +176,7 @@
 		$new_wellington             = get_theme_mod('fontSelector') == 'new-wellington';
 		$poppins_playfair           = get_theme_mod('fontSelector') == 'poppins-playfair';
 		$oswald_roboto              = get_theme_mod('fontSelector') == 'oswald-roboto';
+		$forum_work                 = get_theme_mod('fontSelector') == 'forum-work';
 
 		if($new_wellington) {
 			$css_1 .='
@@ -311,11 +312,27 @@
 			}
 			';
 		}
+		if($forum_work) {
+			$css_1 .='
+			h1,h2,h3,h4,h5 {
+			 font-family: "Forum", cursive;
+			}
+			body. body p, p {
+			 font-family: "Work Sans", sans-serif;
+			}
+			#menu-primary-navigation-menu li.menu-item {
+			 font-family: "Work Sans", sans-serif;
+			}
+			';
+		}
 		return $css_1;
 	}
 
 	add_action( 'wp_enqueue_scripts', 'load_fonts_conditionally' );
 	function load_fonts_conditionally() {
+
+		wp_register_style('forum-work', 'https://fonts.googleapis.com/css2?family=Forum&family=Work+Sans&display=swap', [], null );
+
 		wp_register_style( 'default-font', 'https://fonts.googleapis.com/css2?family=Domine&family=Open+Sans:wght@700&display=swap', [], null );
 
 		wp_register_style( 'roboto-raleway', 'https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@700&display=swap', [], null );
@@ -356,6 +373,7 @@
 		$new_wellington             = get_theme_mod('fontSelector') == 'new-wellington';
 		$poppins_playfair           = get_theme_mod('fontSelector') == 'poppins-playfair';
 		$oswald_roboto              = get_theme_mod('fontSelector') == 'oswald-roboto';
+		$forum_work                 = get_theme_mod('fontSelector') == 'forum-work';
 
 		if($new_wellington) {
 			wp_enqueue_style('new-wellington');
@@ -394,5 +412,8 @@
 		}
 		if($oswald_roboto) {
 			wp_enqueue_style('oswald-roboto');
+		}
+		if($forum_work) {
+			wp_enqueue_style('forum-work');
 		}
 	}

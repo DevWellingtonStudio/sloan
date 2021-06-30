@@ -61,7 +61,8 @@
 				'anisha-poppins'            => __('Anisha/Poppins', 'wellington-studio'),
 				'new-wellington'            => __('New Wellington', 'wellington-studio'),
 				'poppins-playfair'          => __('Poppins/Playfair', 'wellington-studio'),
-				'oswald-roboto'             => __('Oswald/Roboto', 'wellington-studio')
+				'oswald-roboto'             => __('Oswald/Roboto', 'wellington-studio'),
+				'forum-work'                => __('Forum/Work', 'wellington-studio')
 			)
 		) );
 
