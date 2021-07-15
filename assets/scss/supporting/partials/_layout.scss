@@ -13,13 +13,13 @@ input[type="search"] {
 /* Wrap
 --------------------------------------------- */
 
-.wrap {
+/*.wrap {
     max-width: map-get( $breakpoints, 'desktop' );
     margin: 0 auto;
 	padding-left:  ($grid-gap / 2);
 	padding-right: ($grid-gap / 2);
 	@include clearfix;
-}
+}*/
 
 .site-inner {
 	padding: 36px 0;
