@@ -76,11 +76,11 @@
 		}
 
 		$port_slider1           = get_theme_mod('port_slider1', $default);
-		$slider1_bg				= get_theme_mod('slider1_bg');
-		$slider1_title_color	= get_theme_mod('slider1_title_color');
-		$slider1_text_color		= get_theme_mod('slider1_text_color');
+		$slider1_bg							= get_theme_mod('slider1_bg');
+		$slider1_title_color		= get_theme_mod('slider1_title_color');
+		$slider1_text_color			= get_theme_mod('slider1_text_color');
 		$slider1_btn_text_color	= get_theme_mod('slider1_btn_text_color');
-		$slider1_btn_color		= get_theme_mod('slider1_btn_color');
+		$slider1_btn_color			= get_theme_mod('slider1_btn_color');
 
 		if($port_slider1 !== $default) {
 			$css_1 .= '
@@ -103,11 +103,11 @@
 		}
 
 		$port_slider2           = get_theme_mod('port_slider2', $default);
-		$slider2_bg			    = get_theme_mod('slider2_bg', $default);
-		$slider2_title_color	= get_theme_mod('slider2_title_color', $default);
-		$slider2_text_color		= get_theme_mod('slider2_text_color', $default);
+		$slider2_bg			    		= get_theme_mod('slider2_bg', $default);
+		$slider2_title_color		= get_theme_mod('slider2_title_color', $default);
+		$slider2_text_color			= get_theme_mod('slider2_text_color', $default);
 		$slider2_btn_text_color	= get_theme_mod('slider2_btn_text_color', $default);
-		$slider2_btn_color		= get_theme_mod('slider2_btn_color', $default);
+		$slider2_btn_color			= get_theme_mod('slider2_btn_color', $default);
 
 		if($port_slider2 !== $default) {
 			$css_1 .= '
@@ -130,11 +130,11 @@
 		}
 
 		$port_slider3           = get_theme_mod('port_slider3', $default);
-		$slider3_bg				= get_theme_mod('slider3_bg', $default);
-		$slider3_title_color	= get_theme_mod('slider3_title_color', $default);
-		$slider3_text_color		= get_theme_mod('slider3_text_color', $default);
+		$slider3_bg							= get_theme_mod('slider3_bg', $default);
+		$slider3_title_color		= get_theme_mod('slider3_title_color', $default);
+		$slider3_text_color			= get_theme_mod('slider3_text_color', $default);
 		$slider3_btn_text_color	= get_theme_mod('slider3_btn_text_color', $default);
-		$slider3_btn_color		= get_theme_mod('slider3_btn_color', $default);
+		$slider3_btn_color			= get_theme_mod('slider3_btn_color', $default);
 
 		if($port_slider3 !== $default){
 			$css_1 .= '
@@ -360,6 +360,8 @@
 		wp_register_style('poppins-playfair', 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@200&display=swap', [], null);
 
 		wp_register_style( 'oswald-roboto', 'https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap', [], null );
+
+
 
 		$default_font               = get_theme_mod('fontSelector') == 'default-font';
 		$roboto_raleway             = get_theme_mod('fontSelector') == 'roboto-raleway-font';
