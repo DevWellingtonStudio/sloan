@@ -45,7 +45,7 @@ function add_hero_video() {
 	$slider1_alt  = get_post_meta( $slider1_id, '_wp_attachment_image_alt', true );
 
 	if($hero_url !== $default) {
-		if ( ! is_active_sidebar( 'home-featured' ) && is_page_template( 'templates/front-page-template.php') || is_page_template('templates/blocks.php' ) ) {
+		if ( ! is_active_sidebar( 'home-featured' ) && is_page_template( 'templates/front-page-template.php')) {
 
 			echo '
 		<section id="hero-video-section">
@@ -68,7 +68,7 @@ function add_hero_video() {
 		</section>
 		';
 		}
-	} elseif($wst_slider1 !== $default && $hero_url == $default && ! is_active_sidebar( 'home-featured' ) && is_page_template( 'templates/front-page-template.php') || is_page_template('templates/blocks.php')) {
+	} elseif($wst_slider1 !== $default && $hero_url == $default && ! is_active_sidebar( 'home-featured' ) && is_page_template( 'templates/front-page-template.php')) {
 
 echo '
 		    <div id="hero-section">
@@ -122,7 +122,7 @@ echo '
 				      }
 				  echo '</div>
 						</div>';
-	} elseif($port_slider1 !== $default && $wst_slider1 == $default && $hero_url == $default && ! is_active_sidebar( 'home-featured' ) && is_page_template( 'templates/front-page-template.php' ) || is_page_template('template/blocks.php')) {
+	} elseif($port_slider1 !== $default && $wst_slider1 == $default && $hero_url == $default && ! is_active_sidebar( 'home-featured' ) && is_page_template( 'templates/front-page-template.php' )) {
 
 	echo '<div id="portrait-section">
 				 <div id="wstPortraitSlider" class="carousel slide carousel-fade" data-ride="carousel">
