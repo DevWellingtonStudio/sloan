@@ -101,9 +101,9 @@
 			'section' => 'navigation',
 			'choices' => array(
 				'' => __( 'Default', 'wellington-studio' ),
-				'sticky-top' => __( 'Sticky Top', 'wellington-studio' ),
-				'fixed-top' => __( 'Fixed Top', 'wellington-studio' ),
-				'fixed-bottom' => __( 'Fixed Bottom', 'wellington-studio' ),
+				'sticky-top'   => __( 'Sticky Top', 'wellington-studio' ),
+				'fixed-top'    => __( 'Fixed Top', 'wellington-studio' ),
+				'fixed-bottom' => __( 'Fixed Bottom', 'wellington-studio' )
 			)
 		) );
 
