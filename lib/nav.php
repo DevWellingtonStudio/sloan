@@ -43,15 +43,16 @@
 
 		return $args;
 	} );
+		// Before calling is_plugin_active(), we must manually include the plugin.php file as noted in the is_plugin_active() docs on Codex.
+		include_once(ABSPATH.'wp-admin/includes/plugin.php');
+		if ( is_plugin_active( 'megamenu/megamenu.php' ) ) {
+			return '';
 
-	if( is_plugin_active( 'megamenu/megamenu.php' ) ) {
-		return '';
+		} else {
 
-	} else {
-
-		// add bootstrap markup around the nav
-		add_filter( 'wp_nav_menu', 'bfg_nav_menu_markup_filter', 10, 2 );
-		function bfg_nav_menu_markup_filter( $html, $args ) {
+			// add bootstrap markup around the nav
+			add_filter( 'wp_nav_menu', 'bfg_nav_menu_markup_filter', 10, 2 );
+			function bfg_nav_menu_markup_filter( $html, $args ) {
 
 				// only add additional Bootstrap markup to
 				// primary and secondary nav locations
@@ -80,8 +81,8 @@
 				}
 
 				return $output;
-				}
 			}
+		}
 
 			function bfg_navbar_brand_markup() {
 

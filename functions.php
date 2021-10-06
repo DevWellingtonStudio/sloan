@@ -92,15 +92,15 @@ function bfg_childtheme_setup() {
 	// Add Accessibility support
 	add_theme_support( 'genesis-accessibility', array( '404-page', 'drop-down-menu', 'headings', 'rems', 'search-form', 'skip-links' ) );
 
-	// Include php files from lib folder
-	// @link https://gist.github.com/theandystratton/5924570
-	foreach ( glob( dirname( __FILE__ ) . '/lib/*.php' ) as $file ) {
-		include $file;
-	}
+		// Include php files from lib folder
+		// @link https://gist.github.com/theandystratton/5924570
+		foreach ( glob( __DIR__ . '/lib/*.php' ) as $file ) {
+			include $file;
+		}
 
-	foreach ( glob(dirname(__FILE__) . '/meta-fields/*.php') as $meta_file ) {
-		include $meta_file;
-	}
+		foreach ( glob( __DIR__ . '/meta-fields/*.php') as $meta_file ) {
+			include $meta_file;
+		}
 
 	// Load Child theme text domain
 	load_child_theme_textdomain( 'wellington-studio', get_stylesheet_directory() . '/languages' );
