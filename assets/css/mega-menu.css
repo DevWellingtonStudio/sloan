@@ -1,5 +1,9 @@
 /* Max Mega Menu CSS */
 
+.no-hero-margin {
+ margin-bottom: 0 !important;
+}
+
 #mega-menu-wrap-primary {
 	width: 100%;
 }
