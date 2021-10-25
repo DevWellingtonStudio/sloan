@@ -52,17 +52,18 @@
 			'choices' => array(
 				'default-font'              => __( 'Default', 'wellington-studio' ),
 				'montserrat-oswald-font'    => __( 'Montserrat/Oswald', 'wellington-studio' ),
-				'montserrat-garamond'       => __('Cormorant-Garamond/Montserrat', 'wellington-studio' ),
+				'montserrat-garamond'       => __( 'Cormorant-Garamond/Montserrat', 'wellington-studio' ),
 				'roboto-raleway-font'       => __( 'Roboto/Raleway', 'wellington-studio' ),
-				'anton-barlow-font'         => __('Anton/Barlow', 'wellington-studio'),
-				'roboto-condensed-font'     => __('Roboto/Cabin', 'wellington-studio'),
-				'mark-poppins'              => __('Mark Script/Poppins', 'wellington-studio'),
-				'blackstone-lato-crimson'   => __('Blackstone/Lato/Crimson', 'wellington-studio'),
-				'anisha-poppins'            => __('Anisha/Poppins', 'wellington-studio'),
-				'new-wellington'            => __('New Wellington', 'wellington-studio'),
-				'poppins-playfair'          => __('Poppins/Playfair', 'wellington-studio'),
-				'oswald-roboto'             => __('Oswald/Roboto', 'wellington-studio'),
-				'forum-work'                => __('Forum/Work', 'wellington-studio')
+				'anton-barlow-font'         => __( 'Anton/Barlow', 'wellington-studio' ),
+				'roboto-condensed-font'     => __( 'Roboto/Cabin', 'wellington-studio' ),
+				'mark-poppins'              => __( 'Mark Script/Poppins', 'wellington-studio' ),
+				'blackstone-lato-crimson'   => __( 'Blackstone/Lato/Crimson', 'wellington-studio' ),
+				'anisha-poppins'            => __( 'Anisha/Poppins', 'wellington-studio' ),
+				'new-wellington'            => __( 'New Wellington', 'wellington-studio' ),
+				'poppins-playfair'          => __( 'Poppins/Playfair', 'wellington-studio' ),
+				'oswald-roboto'             => __( 'Oswald/Roboto', 'wellington-studio' ),
+				'forum-work'                => __( 'Forum/Work', 'wellington-studio' ),
+				'nunito'                    => __( 'Nunito', 'wellington-studio'),
 			)
 		) );
 
@@ -100,9 +101,9 @@
 			'section' => 'navigation',
 			'choices' => array(
 				'' => __( 'Default', 'wellington-studio' ),
-				'sticky-top' => __( 'Sticky Top', 'wellington-studio' ),
-				'fixed-top' => __( 'Fixed Top', 'wellington-studio' ),
-				'fixed-bottom' => __( 'Fixed Bottom', 'wellington-studio' ),
+				'sticky-top'   => __( 'Sticky Top', 'wellington-studio' ),
+				'fixed-top'    => __( 'Fixed Top', 'wellington-studio' ),
+				'fixed-bottom' => __( 'Fixed Bottom', 'wellington-studio' )
 			)
 		) );
 

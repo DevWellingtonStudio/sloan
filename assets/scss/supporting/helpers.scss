@@ -1,5 +1,11 @@
 /** SCSS Helpers
 ====================== */
+.no-bottom-padding {
+  padding-bottom: 0;
+}
+.no-bottom-margin {
+  margin-bottom: 0;
+}
 .nmt-1 {
   top: -1.7em !important;
 }
