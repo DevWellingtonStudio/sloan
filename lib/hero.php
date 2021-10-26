@@ -208,7 +208,7 @@ echo '
 				 </a>';
 		   }
 	echo '</div>';
-	} elseif($hero_url == $default && $wst_slider1 == $default && $port_slider1 == $default) {
+	} elseif($hero_url == $default && $wst_slider1 == $default && $port_slider1 == $default && !is_page_template( 'templates/page_landing.php' ) ) {
 		echo '<div class="no-hero-margin"></div>';
 	}
  }
