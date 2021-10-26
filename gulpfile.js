@@ -44,7 +44,7 @@ var paths = {
         dest: 'languages/wellington-studio.pot'
     },
     site: {
-        url: 'https://wuyee.local'
+        url: 'https://sloan.local'
     }
 }
 
