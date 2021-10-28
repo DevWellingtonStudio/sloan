@@ -1,0 +1,20 @@
+/* Max Mega Menu CSS */
+
+.no-hero-margin {
+ margin-bottom: 0 !important;
+}
+
+#mega-menu-wrap-primary {
+	width: 100%;
+}
+
+.navbar, .navbar .container {
+	display: initial !important;
+	flex-wrap: unset !important;
+	align-items: initial !important;
+	justify-content: initial !important;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
