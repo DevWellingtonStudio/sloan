@@ -12,5 +12,5 @@
 */
 
 // Custom Header
-remove_action( 'wp_head', 'genesis_custom_header_style' );
-remove_action( 'genesis_header', 'genesis_do_header' );
+	remove_action( 'wp_head', 'genesis_custom_header_style' );
+	remove_action( 'genesis_header', 'genesis_do_header' );
