@@ -178,7 +178,18 @@
 		$oswald_roboto              = get_theme_mod('fontSelector') == 'oswald-roboto';
 		$forum_work                 = get_theme_mod('fontSelector') == 'forum-work';
 		$nunito                     = get_theme_mod('fontSelector') == 'nunito';
+		$lato                       = get_theme_mod('fontSelector') == 'lato';
 
+		if($lato) {
+		  $css_1 .='
+		  h1,h2,h3,h4 {
+			font-family: "Lato", sans-serif;
+			}
+			body, body p, p, h5, h6 {
+			font-family: "Lato", sans-serif;
+			}
+		  ';
+		}
 		if($new_wellington) {
 			$css_1 .='
 			h1,h2,h3,h4 {
@@ -371,6 +382,8 @@
 
 		wp_register_style( 'nunito', 'https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap', [], null );
 
+		wp_register_style( 'lato', 'https://fonts.googleapis.com/css2?family=Lato&display=swap', [], null );
+
 
 
 		$default_font               = get_theme_mod('fontSelector') == 'default-font';
@@ -387,6 +400,7 @@
 		$oswald_roboto              = get_theme_mod('fontSelector') == 'oswald-roboto';
 		$forum_work                 = get_theme_mod('fontSelector') == 'forum-work';
 		$nunito                     = get_theme_mod('fontSelector') == 'nunito';
+		$lato                       = get_theme_mod('fontSelector') == 'lato';
 
 		if($new_wellington) {
 			wp_enqueue_style('new-wellington');
@@ -431,5 +445,8 @@
 		}
 		if($nunito) {
 			wp_enqueue_style('nunito');
+		}
+		if($lato) {
+			wp_enqueue_style( 'lato');
 		}
 	}

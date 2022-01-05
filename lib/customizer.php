@@ -64,6 +64,7 @@
 				'oswald-roboto'             => __( 'Oswald/Roboto', 'wellington-studio' ),
 				'forum-work'                => __( 'Forum/Work', 'wellington-studio' ),
 				'nunito'                    => __( 'Nunito', 'wellington-studio'),
+				'lato'                      => __( 'Lato', 'wellington-studio')
 			)
 		) );
 
