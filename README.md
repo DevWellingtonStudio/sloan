@@ -15,6 +15,8 @@ The default branch is under development, use [v4](https://github.com/DevWellingt
 
 ## Building from Source
 
+Note: Run node @14.18.3 or less. Why? "fibers": "^5.0.0" is no longer supported and won't work with Node 16. I used 14.18.3 successfully. npm and yarn fail to install running recent versions of node. (Use NVM when multiple versions of node.js are needed.)
+
 1. Install [Git](https://git-scm.com/).
 2. Clone the repository to your local machine.
 3. Install [Node](https://nodejs.org/en/).

@@ -21,7 +21,7 @@ var plugins = [
     comments({
         removeAllButFirst: true
     })
-]
+];
 
 sass.compiler = require('sass');
 
@@ -46,7 +46,7 @@ var paths = {
     site: {
         url: 'https://sloan.local'
     }
-}
+};
 
 function translation() {
     return gulp.src(paths.languages.src)
@@ -89,7 +89,7 @@ function browserSyncServe(done) {
     browserSync.init({
         injectChanges: true,
         proxy: paths.site.url
-    })
+    });
     done();
 }
 
@@ -99,7 +99,7 @@ function browserSyncReload(done) {
 }
 
 function watch() {
-    gulp.watch(['assets/scss/*.scss', 'assets/scss/**/*.scss'], style).on('change', browserSync.reload)
+    gulp.watch(['assets/scss/*.scss', 'assets/scss/**/*.scss'], style).on('change', browserSync.reload);
     gulp.watch(paths.scripts.src, gulp.series(scriptsLint, js))
     gulp.watch([
             '*.php',
@@ -107,7 +107,7 @@ function watch() {
             '**/**/*.php'
         ],
         gulp.series(browserSyncReload)
-    )
+    );
 }
 
 gulp.task('translation', translation);
