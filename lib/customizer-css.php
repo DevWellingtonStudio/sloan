@@ -179,6 +179,18 @@
 		$forum_work                 = get_theme_mod('fontSelector') == 'forum-work';
 		$nunito                     = get_theme_mod('fontSelector') == 'nunito';
 		$lato                       = get_theme_mod('fontSelector') == 'lato';
+		$overpass                   = get_theme_mod('fontSelector') == 'overpass';
+
+		if($overpass) {
+			$css_1 .='
+			h1,h2,h3,h4 {
+			font-family: "Overpass", sans-serif;
+			}
+			body, body p, p, h5, h6 {
+			font-family: "Overpass", sans-serif;
+			}
+			';
+		}
 
 		if($lato) {
 		  $css_1 .='
@@ -384,6 +396,8 @@
 
 		wp_register_style( 'lato', 'https://fonts.googleapis.com/css2?family=Lato&display=swap', [], null );
 
+		wp_register_style( 'overpass', 'https://fonts.googleapis.com/css2?family=Overpass&display=swap', [], null );
+
 
 
 		$default_font               = get_theme_mod('fontSelector') == 'default-font';
@@ -401,6 +415,7 @@
 		$forum_work                 = get_theme_mod('fontSelector') == 'forum-work';
 		$nunito                     = get_theme_mod('fontSelector') == 'nunito';
 		$lato                       = get_theme_mod('fontSelector') == 'lato';
+		$overpass                   = get_theme_mod('fontSelector') == 'overpass';
 
 		if($new_wellington) {
 			wp_enqueue_style('new-wellington');
@@ -448,5 +463,8 @@
 		}
 		if($lato) {
 			wp_enqueue_style( 'lato');
+		}
+		if($overpass) {
+			wp_enqueue_style('overpass');
 		}
 	}
