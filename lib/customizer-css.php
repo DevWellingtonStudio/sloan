@@ -180,6 +180,18 @@
 		$nunito                     = get_theme_mod('fontSelector') == 'nunito';
 		$lato                       = get_theme_mod('fontSelector') == 'lato';
 		$overpass                   = get_theme_mod('fontSelector') == 'overpass';
+		$mangueira                  = get_theme_mod('fontSelector') == 'mangueira';
+
+		if($mangueira) {
+			$css_1 .='
+			h1,h2,h3,h4 {
+			font-family: "Mangueira", sans-serif;
+			}
+			body, body p, p, h5, h6 {
+			font-family: "Mangueira", sans-serif;
+			}
+			';
+		}
 
 		if($overpass) {
 			$css_1 .='
@@ -380,6 +392,8 @@
 
 		wp_register_style('blackstone', get_stylesheet_directory_uri() . '/assets/fonts/blackstone.css', array(), '' );
 
+		wp_register_style('mangueira', get_stylesheet_directory_uri() . '/assets/fonts/Mangueira/mangueira.css', array(), '' );
+
 		wp_register_style('lato-crimson', 'https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lato:wght@700&display=swap', [], null );
 
 		wp_register_style('anisha-poppins', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap', [], null );
@@ -416,6 +430,11 @@
 		$nunito                     = get_theme_mod('fontSelector') == 'nunito';
 		$lato                       = get_theme_mod('fontSelector') == 'lato';
 		$overpass                   = get_theme_mod('fontSelector') == 'overpass';
+		$mangueira                  = get_theme_mod('fontSelector') == 'mangueira';
+
+		if($mangueira) {
+			wp_enqueue_style('mangueira');
+		}
 
 		if($new_wellington) {
 			wp_enqueue_style('new-wellington');

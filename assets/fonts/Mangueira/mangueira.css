@@ -1,0 +1,6 @@
+/** Mangueira Font **/
+@font-face {
+	font-family: 'Mangueira';
+	src: url('Mangueira-Regular.ttf') format('truetype'),
+	url('Mangueira-Regular.otf') format('opentype')
+}

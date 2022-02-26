@@ -66,6 +66,7 @@
 				'nunito'                    => __( 'Nunito', 'wellington-studio'),
 				'lato'                      => __( 'Lato', 'wellington-studio'),
 				'overpass'                  => __( 'Overpass', 'wellington-studio' ),
+				'mangueira'                 => __( 'Mangueira', 'wellington-studio' ),
 			)
 		) );
 
