@@ -7,6 +7,12 @@ nav {
 	padding-bottom: .2em !important;
   }
 }
+
+#nav-primary.navbar-collapse.collapse.show {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
 .navbar-toggler-icon:focus-visible,
 .navbar-toggler-icon:focus,
 .navbar-toggler-icon:hover,

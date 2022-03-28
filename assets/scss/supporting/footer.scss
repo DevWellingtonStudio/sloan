@@ -29,3 +29,11 @@
 	  background-color: $SolarBlack;
 	}
 }
+
+.archive-pagination.pagination.clearfix {
+  margin-bottom: 1.618em;
+  li a {
+	width: 42px;
+	height: 42px;
+  }
+}
