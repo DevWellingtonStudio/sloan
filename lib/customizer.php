@@ -335,6 +335,33 @@
 				)
 			)
 		);
+
+		// Blog
+		$wp_customize->add_section( 'blog', array(
+		 'title' => __( 'Blog', 'wellington-studio' ),
+		 'priority' => 40,
+		 'panel' => 'wellington'
+		) );
+
+		// Blog Hero Image
+		$wp_customize -> add_setting ( 'blog_hero', array(
+		 'default'           => '',
+		 'type'              => 'theme_mod',
+		 'transport'         => 'refresh'
+		));
+		$wp_customize -> add_control (
+		 new WP_Customize_Image_Control (
+			$wp_customize,
+			'blog_hero',
+			array (
+			 'label'             => __('Blog Hero Image'),
+			 'section'           => 'blog',
+			 'settings'          => 'blog_hero',
+			 'priority'          => 40,
+			 'sanitize_callback' => 'esc_url_raw',
+			)
+		 )
+		);
 	} );
 
 
